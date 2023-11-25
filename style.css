@@ -14,16 +14,19 @@ body{
 
 section{
     display: flex;
-  justify-content: center;
-    gap: 10px;
+    justify-content: center;
     flex-wrap: wrap;
     width: 800px;
 }
 section div{
-    width: 200px;
-    height:200px;
-    background-color: violet;
+    border: 1px solid black;
+    width: 210px;
+    height:210px;
+    background-color: white;
 }
 .red{
     background-color: red;
+}
+.white{
+    background-color: white;
 }

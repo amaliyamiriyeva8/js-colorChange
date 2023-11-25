@@ -1,12 +1,17 @@
 
 const myDiv=document.querySelectorAll('div');
+
 for (let i=0;i<myDiv.length;i++){
     myDiv[i].addEventListener('click',(event)=>{
-        for(let j=0;j<myDiv.length;j++){
-            myDiv[j].classList.remove('red')
+        if(event.target.style.backgroundColor =="red"){
+            event.target.style.backgroundColor="";
         }
-        event.target.classList.add('red')
+        else{
+            for (let j=0;j<myDiv.length;j++){
+                myDiv[j]. style.backgroundColor="";
+            }
+            event.target.style.backgroundColor='red';
+        }  
     })
 }
-
 
